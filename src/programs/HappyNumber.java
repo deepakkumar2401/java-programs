@@ -11,13 +11,14 @@ public class HappyNumber {
         BufferedReader reader = new BufferedReader(inputStreamReader);
         System.out.print("enter Number:");
         int n = Integer.parseInt(reader.readLine());
+        int num = n;
         while (n > 9) {
             n = happy(n);
         }
         if (n == 1 || n == 7) {
-            System.out.println(n + ": is happy number!!!!");
+            System.out.println(num + ": is happy number!!!!");
         } else {
-            System.out.println(n + ": is not happy number!!!!");
+            System.out.println(num + ": is not happy number!!!!");
         }
     }
 

@@ -2,7 +2,7 @@ package programs;
 
 import java.util.Scanner;
 
-public class DesariumNumber {
+public class DisariumNumber {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
