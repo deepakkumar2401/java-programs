@@ -2,16 +2,16 @@ package programs;
 
 import java.util.Scanner;
 
-public class PallindromeString {
+public class PalindromeString {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.print("enter String:");
         String str = scanner.next();
         if (str.equals(reverse(str))) {
-            System.out.println(str + ": is Pallindrome number!!!!!");
+            System.out.println(str + ": is Palindrome string!!!!!");
         } else {
-            System.out.println(str + ": is not Pallindrome number!!!!!");
+            System.out.println(str + ": is not Palindrome string!!!!!");
         }
     }
 
