@@ -4,7 +4,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-public class PallindromeNumber {
+public class PalindromeNumber {
 
     public static void main(String[] args) throws IOException {
         InputStreamReader inputStreamReader = new InputStreamReader(System.in);
@@ -18,10 +18,9 @@ public class PallindromeNumber {
             sum = (sum * 10) + rem;
             number = number / 10;
         }
-        if (copy == sum) {
+        if (copy == sum)
             System.out.println(copy + ": is Pallindrome number!");
-        } else {
+        else
             System.out.println(copy + ": is not Pallindrome number!");
-        }
     }
 }
