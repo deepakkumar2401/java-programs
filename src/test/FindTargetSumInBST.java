@@ -1,7 +1,5 @@
 package test;
 
-// File: FindTargetSumInBST.java
-
 import java.util.HashSet;
 import java.util.Set;
 
@@ -18,10 +16,10 @@ public class FindTargetSumInBST {
 
     public boolean findTarget(TreeNode root, int k) {
         Set<Integer> seen = new HashSet<>();
-        return dfs(root, k, seen);
+        return find(root, k, seen);
     }
 
-    private boolean dfs(TreeNode node, int k, Set<Integer> seen) {
+    private boolean find(TreeNode node, int k, Set<Integer> seen) {
         if (node == null) return false;
 
         if (seen.contains(k - node.val)) {
@@ -29,10 +27,9 @@ public class FindTargetSumInBST {
         }
         seen.add(node.val);
 
-        return dfs(node.left, k, seen) || dfs(node.right, k, seen);
+        return find(node.left, k, seen) || find(node.right, k, seen);
     }
 
-    // Example to test the tree
     public static void main(String[] args) {
         TreeNode root = new TreeNode(5);
         root.left = new TreeNode(3);
@@ -42,7 +39,7 @@ public class FindTargetSumInBST {
         root.right.right = new TreeNode(7);
 
         FindTargetSumInBST solution = new FindTargetSumInBST();
-        System.out.println(solution.findTarget(root, 9)); // Output: true
+        System.out.println(solution.findTarget(root, 13)); // Output: true
     }
 }
 
