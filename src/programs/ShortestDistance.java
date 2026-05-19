@@ -2,7 +2,7 @@ package programs;
 
 import java.util.ArrayList;
 
-public class Pro {
+public class ShortestDistance {
 
     public static void main(String[] args) {
         ArrayList<String> list = new ArrayList<>();
